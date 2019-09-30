@@ -1,7 +1,7 @@
 
-[IP data, https://ipinfo.io]
+[IP data](https://ipinfo.io)
 
 
-[ISS current location data,http://api.open-notify.org]
+[ISS current location data](http://api.open-notify.org)
 
 
