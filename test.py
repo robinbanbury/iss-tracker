@@ -4,9 +4,7 @@
 
 import datetime
 import requests
-# import twitter
 from pprint import pprint
-# from hidden import consumer_key, consumer_secret, access_token, access_secret
 
 from post_tweet import post_tweet
 
