@@ -14,3 +14,8 @@ pass_data = requests.get(
     'http://api.open-notify.org/iss-pass.json?lat={}&lon={}'.format(lat, lon)).json()
 pprint(pass_data)
 
+pass_time = pass_data['response'][0]['risetime']
+now = datetime.datetime.now().timestamp()
+
+how_long = datetime.timedelta(seconds=pass_time - now)
+print(how_long)
