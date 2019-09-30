@@ -15,7 +15,8 @@ pass_data = requests.get(
 pprint(pass_data)
 
 pass_time = pass_data['response'][0]['risetime']
+pass_duration = pass_data['response'][0]['duration']
 now = datetime.datetime.now().timestamp()
 
 how_long = datetime.timedelta(seconds=pass_time - now)
-print(how_long)
+print(how_long, divmod(pass_duration, 60))
