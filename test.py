@@ -8,6 +8,7 @@ import requests
 from pprint import pprint
 # from hidden import consumer_key, consumer_secret, access_token, access_secret
 
+from post_tweet import post_tweet
 
 ip_data = requests.get('https://ipinfo.io').json()
 pprint(ip_data)
@@ -36,4 +37,4 @@ msg = 'ISS next over {city}({region}) in {how_long} for {mins}:{secs}, at {time}
     secs=secs,
     time=time)
 
-print(msg)
+post_tweet(msg)
